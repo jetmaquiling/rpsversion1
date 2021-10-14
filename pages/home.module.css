@@ -148,6 +148,7 @@
     width: 300px;
 }
 
+
 .imagebanner{
     width: 170%;
 }
@@ -381,6 +382,7 @@
     }
     
     .mobileImage{
+        margin-top: 50px;
         display: flex;
         justify-content: center;
     }
@@ -426,6 +428,7 @@
     } */
     .section1 {
         height: 100%;
+        max-height: none;
     }
     .section2 {
         clip-path: polygon(0 0%, 100% 0, 100% 98%, 0 100%);
@@ -482,6 +485,11 @@
         width: 90%;
         height: 90%;
     }
+
+    .image1{
+        width: 200px;
+    }
+    
 
     /********************************************/
     .titleBody {

@@ -10,7 +10,7 @@
     transition: 1.0s;
     display: flex;
     flex-direction: column;
-    z-index: 20000;
+    z-index: 2000;
     overflow-y:auto;
 }
 .off{
@@ -29,7 +29,7 @@
     transform: translate(2000px,0);
     animation-name: bodyanimate;
     animation-duration: 1s ease;
-    z-index: 20000;
+    z-index: 2000;
 }
 
 @keyframes bodyanimate {
