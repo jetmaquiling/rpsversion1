@@ -46,12 +46,9 @@ const NavigationV1 = ({pos,open, setOpen}) => {
         <div className={style.navbar}>
           <div className={style.navbar1}>
               <div className={style.tinylogoToken}>
-                <img src={'/Logo/LOGOwhite.png'} alt="Logo"  className={style.logoToken}/>
+                <img src={'/Logo/rps.png'} alt="Logo"  className={style.logoToken}/>
               </div>
-              
-              <h3 className={style.logoTitle1}>RCK</h3>
-              <h3 className={style.logoTitle2}>•</h3>
-              <h3 className={style.logoTitle3}>ROCK Token</h3>
+            
           </div>
 
           <div className={style.navbar3} onClick={()=>{setOpen(!open)}}>      
@@ -90,7 +87,7 @@ const NavigationV1 = ({pos,open, setOpen}) => {
 
         </div>
         <div className={style.rightsBox}>
-                    <p className={style.rightsText}>2021 © RCKgaming.io | All rights reserved</p>
+                    <p className={style.rightsText}>2021 © RPSAXESS.io | All rights reserved</p>
         </div>
 
         

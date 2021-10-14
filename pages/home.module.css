@@ -156,6 +156,10 @@
     width: 100%;
 }
 
+.mobileImage{
+    display: none;
+}
+
 .tokenomiksImage{
     width: 500px;
 }
@@ -220,7 +224,7 @@
     cursor: pointer;
     transition: 0.5s;
     border-radius: 25px;
-    background: linear-gradient(-100deg, #dac407, #e60891,  #f5007b, #969300);
+    background: linear-gradient(-100deg, #e7d002, #e60891,  #f5007b, #cac700);
     background-size: 400% 400%;
     display: flex;
     align-items: center;
@@ -312,7 +316,8 @@
 
     .mainBody1{
         flex-direction: column-reverse;
-        margin: 100px 0px;
+        margin: 100px 0px 0px 0px;
+        padding: 0px;
     }
 
     .mainBody2{
@@ -338,6 +343,8 @@
     .bodyContent1 {
         justify-content: center;
         text-align: center;
+        width: 100%;
+        height: 200%;
     }
     
     .bodyContent2 {
@@ -359,14 +366,29 @@
         align-items: center;
         justify-content: center;
     }
-    /* .bodyImage1 {
+
+    .bodyImage1 {
+        display: none;
         
-    } */
+    }
     .bodyImage2 {
         width: 90%;
         height: 90%;
     }
 
+    .imagemiddlebanner{
+        display: none;
+    }
+    
+    .mobileImage{
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobileImageItem{
+        width: 30%;
+    }
+    
     /********************************************/
 
     .buttonContainer{
@@ -406,7 +428,7 @@
         height: 100%;
     }
     .section2 {
-        clip-path: polygon(0 2%, 100% 0, 100% 98%, 0 100%);
+        clip-path: polygon(0 0%, 100% 0, 100% 98%, 0 100%);
         background-image:  linear-gradient(rgba(235, 235, 235, 0.8), rgba(235, 235, 235, 0.8)),url("/Background/scattered-forcefieldsphone.svg");
         height: 100%;
     }
@@ -422,7 +444,8 @@
     }
 
     .mainBody1{
-        margin: 100px 0px;
+        margin: 100px 0px 0px 0px;
+        padding: 0px;
     }
 
     .mainBody2{
@@ -439,6 +462,9 @@
         width: 95%;
         
     }
+    .bodyContent1 {
+        height: 100%;
+    }
     .bodyContent2 {
         justify-content: flex-start;
         height: 55%;
@@ -450,6 +476,8 @@
     .bodyImage {
         width: 150px;
     }
+
+   
     .bodyImage2 {
         width: 90%;
         height: 90%;

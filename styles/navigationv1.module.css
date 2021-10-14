@@ -2,7 +2,7 @@
     width: 100%;
     position: fixed;
     height: 100%;
-    background-image: url("/Background/sun-tornado.svg");
+    background-image: url("/Background/loader-bg.svg");
     background-color: #001f47;
     background-size: cover;
     background-repeat: no-repeat, repeat;
@@ -10,14 +10,14 @@
     transition: 1.0s;
     display: flex;
     flex-direction: column;
-    z-index: 4000;
+    z-index: 20000;
     overflow-y:auto;
 }
 .off{
     width: 100%;
     position: fixed;
     height: 100%;
-    background-image: url("/Background/sun-tornado.svg");
+    background-image: url("/Background/loader-bg.svg");
     background-color: rgb(25, 1, 80);
     background-size: cover;
     background-repeat: no-repeat, repeat;
@@ -29,7 +29,7 @@
     transform: translate(2000px,0);
     animation-name: bodyanimate;
     animation-duration: 1s ease;
-    z-index: 3000
+    z-index: 20000;
 }
 
 @keyframes bodyanimate {
@@ -51,7 +51,7 @@
 }
 
 .tinylogoToken{
-    width: 5%;
+    width: 10%;
     margin: 0px 5px;
     display: flex;
     align-content: center;
@@ -191,7 +191,7 @@
 
 @media only screen and (max-width: 800px) {
     .tinylogoToken{
-        width: 10%;
+        width: 20%;
         margin: 0px 5px;
         display: flex;
         align-content: center;

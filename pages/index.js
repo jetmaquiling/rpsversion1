@@ -21,12 +21,12 @@ export default function Home() {
   return (
     <div className={style.main}>
       <Head>
-        <title>RCK•ROCK Token - Providing unchartered opportunities with the adoption and utilization of blockchain technologies.</title>
+        <title>RPS - Play To Earn - Play the simplest Play to Earn Game. Powered by Blockchain Technology. Get Your Axess Card Now!</title>
         <meta name="description" content="Providing unchartered opportunities with the adoption and utilization of blockchain technologies."/>
         <meta property="og:type"               content="website" />
-        <meta property="og:title"              content="Providing unchartered opportunities with the adoption and utilization of blockchain technologies." />
-        <meta property="og:description"        content="Developing a compelling ventures for RCK Token users that harness blockchain technology that touches gaming, NFT, marketing and DeFi and other social applications." />
-        <meta property="og:image"              content='./Thumbnail/thumbnail.jpg' />
+        <meta property="og:title"              content="RPS - Play To Earn Blockchain Game" />
+        <meta property="og:description"        content="Play the simplest Play to Earn Game. Powered by Blockchain Technology. Get Your Axess Card Now!" />
+        <meta property="og:image"              content='./Thumbnail/rps.JPG' />
       </Head>
       <ScrollButton/>
       <Head>
@@ -42,8 +42,8 @@ export default function Home() {
             </div>
 
             <div className={`${style.bodyContent} ${style.bodyContent1}`}>
-              <h1 className={style.titleBody}>PLAY TO EARN</h1>
               <img src='/Images/homepage/game.png'  alt="Token"  className={`${style.image} ${style.image1}`} />
+              <h1 className={style.titleBody}>PLAY TO EARN</h1>
               <p className={style.textBody}>Play the simplest Play to Earn Game.<br/> Powered by Blockchain Technology.<br/> Get Your Axess Card Now!</p>
 
               <Link href='/Files/RCK Whitepaper.pdf'>
@@ -51,9 +51,12 @@ export default function Home() {
                   <h4 className={style.h4animate}>Get Started </h4>
                 </div>
               </Link>
-
               <img src='/Images/homepage/versus.png'  alt="Token"  className={`${style.image} ${style.imagemiddlebanner}`} />
-
+              <div  className={style.mobileImage}>
+                <img src='/Images/homepage/left-banner.png'  alt="Token"  className={`${style.image} ${style.mobileImageItem}`} />
+                <img src='/Images/homepage/versus.png'  alt="Token"  className={`${style.image} ${style.mobileImageItem}`} />
+                <img src='/Images/homepage/right-banner.png'  alt="Token"  className={`${style.image} ${style.mobileImageItem}`} />
+              </div>
             </div>
 
             <div className={`${style.bodyImage} ${style.bodyImage1}`}>

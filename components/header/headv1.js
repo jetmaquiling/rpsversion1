@@ -42,14 +42,8 @@ const HeadV1 = ({pos, open, setOpen, title , root}) => {
           
             <div className={style.navbar2 }>
                 
-                <div  className={style.buttonBox}  onClick={()=> {setOption2(!option2); setOption1(false); setOption3(false); setOption4(false)}} >
-                  <h4 className={style.h4animate}>WhitePaper</h4>
-                  <MdKeyboardArrowDown style={{color: '#fff'}}/>
-                  <div className={option2 ? style.optionOpen : style.optionClose} >
-                    <Link href="/Files/RCK Whitepaper.pdf"><h5 className={style.h5animate}>• Download</h5></Link>
-                    <Link href="/v1"><h5 className={style.h5animate}>• Documentation</h5></Link>
-                    <Link href="/v1/roadmap"><h5 className={style.h5animate}>• Roadmap</h5></Link>
-                </div>
+                <div  className={style.buttonBox}  >
+                  <h4 className={style.h4animate}>Home</h4>
                 </div>
                 
                 <div  className={style.buttonBox}  onClick={()=> {setOption3(!option3); setOption1(false); setOption2(false); setOption4(false)}} >

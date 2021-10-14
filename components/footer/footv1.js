@@ -28,7 +28,7 @@ const FootV1 = () => {
             </div>
            
             <div className={style.rightsBox}>
-                    <p className={style.rightsText}>2021 © RCKgaming.io | All rights reserved</p>
+                    <p className={style.rightsText}>2021 © RPSAXESS.io | All rights reserved</p>
             </div>
     </div>
     
