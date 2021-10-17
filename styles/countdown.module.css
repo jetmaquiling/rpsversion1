@@ -96,7 +96,7 @@
 
 .buttonBox{
     margin: 0px 20px 0px 0px;
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
     transition: 0.5s;
     border-radius: 5px;
     background: linear-gradient(-45deg, #23d5ab, #263ce391,  #263de3, #23d5abc4);

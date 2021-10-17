@@ -89,7 +89,7 @@
 }
 .navbar3 {
     max-width: 10%;
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 
 .navbar2 {
@@ -105,7 +105,7 @@
 }
 
 .buttonBox{
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
     display: flex;
 }
 
@@ -146,7 +146,7 @@
 .drawerButton{
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 
 .svgUp{

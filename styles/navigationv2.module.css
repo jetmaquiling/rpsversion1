@@ -15,7 +15,7 @@
 
 
 .buttonBox{
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 
 

@@ -115,7 +115,7 @@
     padding-bottom: 5px;
     border-bottom: 3px solid rgba(0, 217, 255, 0);
     transition: 0.5s;
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 
 .buttonText:hover{
@@ -126,7 +126,7 @@
 
 
 .seemoreText{
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
     transition: 0.5s;
     padding-bottom: 5px;
     color: rgba(255, 255, 255, 0.600);

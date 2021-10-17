@@ -11,6 +11,7 @@ import LazyLoad from 'react-lazyload';
 
 import { MdArrowForward,MdCloudUpload,MdShoppingCart,MdLock,MdVideogameAsset, MdKeyboardArrowUp} from "react-icons/md";
 import ScrollButton from '@/components/buttons/scroll';
+import GameMechanics from '@/components/caveats/gamemechanics';
 
 
 
@@ -29,9 +30,6 @@ export default function Home() {
         <meta property="og:image"              content='./Thumbnail/rps.JPG' />
       </Head>
       <ScrollButton/>
-      <Head>
-        <title>RCK Rock Ventures</title>
-      </Head>
       <div className={`${style.section} ${style.section1}`}>
 
         <HeadV2/>
@@ -72,79 +70,31 @@ export default function Home() {
           <div className={`${style.mainBody} ${style.mainBody2}`}>
           
               <div className={`${style.bodyContent} ${style.bodyContent2}`}>
-                <h1 className={style.titleBody2}>About RCK (ROCK TOKEN)</h1>
-                <p className={style.textBody2}>A Rock is connotes formidability and stability that is the bedrock of mountains or temple.</p>
-                <p className={style.textBody2}>This is the spirit behind the Rock Token.</p>
-                <p className={style.textBody2}>Rock refer to the overall eco-system with initiatives called “projects” exclusively using ROCK Token or RCK Token.</p>
+                <h1 className={style.titleBody2}>INTRODUCTION</h1>
+                <p className={style.textBody2}>ROCK-PAPER-SCISSORS — The most universal and simplest game known to everyone dating back as far as 206 BC. We believe that a recognizable, easy, low cost and engaging game would be strategic intro to the blockchain world. </p>
+                <p className={style.textBody2}>RPS Platform — The most simplest Play To Earn Ecosystem, built on Binance Smart Chain. Incorporation Gaming, NFTs and DeFi together into exciting, diverse, and rewarding opportunities.</p>
+
+                <p className={style.textBody2}>RPS Game will be tied directly to the BAS token and NFT reward marketplace, allowing infinite strategies for users, players, and investors to earn.</p>
+
+                <p className={style.textBody2}>The RPS Model will revolutionize the blockchain gaming space and what people
+                can do with their cryptocurrency forever.</p>
+
                   <Link href='/v1'>
                     <div  className={`${style.buttonBox} ${style.buttonBox2}`} >
-                      <h4 className={style.h4animate}>Read Documentation</h4><MdArrowForward   className={style.icon}/>
+                      <h4 className={style.h4animate}>Learn more</h4>
                     </div>
                   </Link>
-              </div>
-              
-              <div className={style.documentContainer}>
-                <div className={style.documentBox}>
-                    <h1 className={style.titleBody2}>How It Works?</h1>
-                    <p className={style.textBody2}>Blockchain is a peer-to-peer computer process used to secure and verify RCK transactions—payments from one user to another on a decentralized network.</p>
-                    <div  className={style.buttonContainer} >
-                      <Link href='/v1'>
-                        <div  className={`${style.buttonBox} ${style.buttonBox2}`} >
-                          <h4 className={style.h4animate}>Let's Start</h4><MdArrowForward   className={style.icon}/>
-                        </div>
-                      </Link>
-                    </div>
-
-                </div>
-                
-                <div className={style.documentBox}>
-                   
-                    <h1 className={style.titleBody2}>  <MdCloudUpload className={style.symbol} style={{color:'#001f47'}}/> Download a Wallet </h1>
-                    <p className={style.textBody2}>RCK Token is received, stored, and sent using software known as a Binance Smart Chain Wallet and MetaMask. Download the official Binance Smart Chain Wallet and MetaMask for free.</p>
-                    <br/>
-                   
-                    <h1 className={style.titleBody2}>  <MdShoppingCart className={style.symbol} style={{color:'#001f47'}}/> Buy & Sell</h1>
-                    <p className={style.textBody2}>RCK Token works with exchange partners all around the world to make buying cryptocurrencies in your wallet both a seamless and secure experience.</p>
-                </div>
-
-                <div className={style.documentBox}>
-                    
-                    <h1 className={style.titleBody2}> <MdLock className={style.symbol} style={{color:'#001f47'}}/>Safe & Secure</h1>
-                    <p className={style.textBody2}>We take careful measures to ensure that your RCK Token is as safe as possible. Offline storage provides an important security measure against theft or loss.</p>
-                    <br/>
-                    <h1 className={style.titleBody2}> <MdVideogameAsset className={style.symbol} style={{color:'#001f47'}}/> Play To Earn</h1>
-                    <p className={style.textBody2}>RCK Token has projects most other tokens don't have. But if you don't play, you can earn through several other ways on top of RCK Token projects.</p>
-                </div>
               </div>
 
               
           </div>
           </LazyLoad>
       </div>
-
+      <GameMechanics/>
       {/* <LazyLoad height={100}>
         <Countdown/>
       </LazyLoad> */}
-
-      <div className={`${style.section} ${style.section3}`}>
-        <LazyLoad height={100}>
-          <div className={`${style.mainBody} ${style.mainBody3}`}>
-
-              <div className={style.bodyContent3}>
-                <h1 className={style.titleBody3}>Tokenomics</h1>
-                <img src='/Images/Tokenomics.jpg' alt="Tokenomics"  className={style.tokenomiksImage}  />
-              </div>
-
-              <div className={style.bodyContent3}>
-                <h1 className={style.titleBody3}>Initial Funds And Use</h1>
-                <img src='/Images/FundsandUse.jpg' alt="Initial Funds And Use"  className={style.tokenomiksImage}  />
-              </div>
-
-          </div>
-        </LazyLoad>
-      </div>
       
-      <Events/>
       <FootV1/>
       
     </div>

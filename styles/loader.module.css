@@ -60,7 +60,7 @@
 .sideA{
    
     height: 100%;
-    background-color: #6C159F;
+    background-color: #000;
     animation-name: sideA;
     animation-duration: 3s ;
 }
@@ -82,7 +82,7 @@
 
 .sideB{
     height: 100%;
-    background-color: #6C159F;
+    background-color: #000;
     animation-name: sideB;
     animation-duration: 3s ;
 }

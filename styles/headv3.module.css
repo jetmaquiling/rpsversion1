@@ -61,7 +61,7 @@
 .navbar3 {
     width: 5%;
     padding: 20px 0px;
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 
 
@@ -70,7 +70,7 @@
     margin: 0px 10px;
     transition: 0.5s;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 
 .buttonBox:hover {

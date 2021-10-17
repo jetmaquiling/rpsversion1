@@ -1,0 +1,106 @@
+{
+    "Guide1" : {
+        "title" : "Get Axess Card",
+        "dir": "/Mechanics/Guide1/",
+        "images": ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG"],
+        "steps": [
+            {
+                "note":"You need to get your hands on the Axess Card (That’s an NFT by the way!). You can only get an Axess Card from the Initial Launch or the RPS marketplace. In both places, you would need to buy using our RCK Token.",
+                "trigger": 0
+            },
+            {
+                "note": "Activate Axess Card",
+                "trigger": 1
+            },  
+            {
+                "note": "Each Axess Card will generate a random Play Count - certain allowable number of plays that refreshes every [4] hours.",
+                "trigger": 2
+            },
+            {
+                "note": "Note: At the Initial Launch, only LIMITED no. of Axess Cards will be distributed! Axess Cards will be distributed at a limited time and quantity. Thereafter, players would need to buy Axess Cards in the RPS marketplace, at perhaps a higher price.",
+                "trigger": 3
+            }
+        ]
+    },
+    "Guide2" : {
+        "title" : "Trade (NFT) Axess Cards",
+        "dir": "/Mechanics/Guide2/",
+        "images": ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG"],
+        "steps": [
+            {
+                "note":"Each play round or battle consist of three (3) trays where you will choose the element for each tray: rock, paper or scissors,",
+                "trigger": 0
+            },
+            {
+                "note": "The opponent’s elements shows whether you win or lose each tray",
+                "trigger": 1
+            },
+            {
+                "note": "Each tray that is won will have a corresponding Point should you win (Example: 2 wins and 1 loss = 2 Points).",
+                "trigger": 2
+            },
+            {
+                "note": "Each battle regardless of the outcome will have a corresponding Point.",
+                "trigger": 3
+            }
+        ]
+    },
+    "Guide3" : {
+        "title" : "Earn Points",
+        "dir": "/Mechanics/Guide3/",
+        "images": ["Slide1.JPG","Slide2.JPG"],
+        "steps": [
+            {
+                "note":"When you have enough Points, you can choose to: Convert Points to RCK or Replicate your Axess Card",
+                "trigger": 0
+            },
+            {
+                "note": "Now with RCK you have access to RCK Ventures or trade in the DEX.",
+                "trigger": 1
+            }
+        ]
+    },
+    "Guide4" : {
+        "title" : "Use Points to Replicate or buy Special Axess Card",
+        "dir": "/Mechanics/Guide4/",
+        "images": ["Slide1.JPG","Slide2.JPG","Slide3.JPG"],
+        "steps": [
+            {
+                "note":"You can choose to replicate your Axess Card to produce another Axess Card once you have the required Points.",
+                "trigger": 0
+            },
+            {
+                "note": "An Axess Card must be 1st activated to use. The replicated Axess Card characteristics is generated at random once activated",
+                "trigger": 1
+            },
+            {
+                "note": "Seasonal Special Axess Card Release: You Since an Axess is an NFT, there will be limited edition Axess Cards with unique graphic designs as collectible NFTs to be released for player with enough Points. These special Axess Cards will be released in limited time and supply ONLY to those qualified players.",
+                "trigger": 2
+            }
+        ]
+    },
+    "Guide5" : {
+        "title" : "Trade (NFT) Axess Cards",
+        "dir": "/Mechanics/Guide5/",
+        "images": ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG"],
+        "steps": [
+            {
+                "note":"Axess Cards are NFTs. You can trade them in the marketplace.",
+                "trigger": 0
+            },
+            {
+                "note": "The value of the Axess Card may depend whether it is activate.",
+                "trigger": 1
+            },
+            {
+                "note": "Naturally, activated Axess Card with more characteristics (play count and replication count) may demand higher price than inactivated Axess Card or activated Axess Card with less characteristics.",
+                "trigger": 2
+            },
+            {
+                "note": "Players can buy and sell Axess Cards using RCK.",
+                "trigger": 3
+            }
+        ]
+    }
+   
+}

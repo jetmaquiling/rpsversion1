@@ -92,7 +92,7 @@
 .navbar3 {
     width: 5%;
     padding: 0px 0px;
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 /***************************************************/
 
@@ -111,7 +111,7 @@
 }
 
 .h5animate{
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
     font-weight: 600;
     color: rgba(252, 252, 252, 0.900);
     font-size: 16px;
@@ -138,7 +138,7 @@
     margin: 0px 10px;
     transition: 0.3s;
     border-bottom: 5px solid rgba(255, 255, 255, 0);
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
     display: flex;
     align-items: center;
 }

@@ -20,7 +20,7 @@
 .drawerButton{
     display: flex;
     align-items: center;
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 
 .svgUp{
@@ -61,7 +61,7 @@
 .drawerLink{
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    cursor: url('/Svg/pointer.cur'),auto;
 }
 
 
