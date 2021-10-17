@@ -111,6 +111,28 @@ const GameMechanics = () => {
                
           }
     }
+    const toggleSlide = (index,mech) => {
+        switch (mech.guideNum) {
+            case 1:
+                setGuide1(index);
+              break;
+            case 2:
+                setGuide2(index);
+              break;
+            case 3:
+                setGuide3(index)
+            break;
+            case 4:
+                setGuide4(index) 
+                break;
+            case 5:
+                setGuide5(index) ;
+                break;
+            default:
+                setGuide1(index) ;
+          }
+
+    }
 
 
 
@@ -140,9 +162,9 @@ const GameMechanics = () => {
                         <div className={style.contentContainer}>
                             <LazyLoad height={0}>
                                 <h2 className={style.contentTitle}>{MD.title}</h2>
-                                {MD.steps.map((data)=>{
+                                {MD.steps.map((data,index)=>{
                                     return (
-                                        <p className={data.trigger == findGuide(MD) ? style.text2 : style.text1}>{data.note}</p>
+                                        <p onClick={()=> {toggleSlide(index,MD)}} className={data.trigger == findGuide(MD) ? style.text2 : style.text1}>{data.note}</p>
                                     )
                                 })}   
                             </LazyLoad> 
