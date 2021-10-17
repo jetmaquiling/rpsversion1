@@ -420,9 +420,7 @@
   
 
   @media only screen and (max-width: 500px) {
-    .main {
-        background-image: url("/Background/pattern-randomizedphone.svg");
-    }
+    
     /* .section {
     } */
     .section1 {

@@ -1,32 +1,8 @@
 import * as React from "react"
 import * as style from "@/styles/gamemechanics.module.css"
 import Link from "next/link"
-
-const mechanics = {
-    title : "Get Axess Card",
-    dir: "/Mechanics/Guide1/",
-    images: ["Slide1.JPG","Slide2.JPG","Slide3.JPG","Slide4.JPG"],
-    steps: [
-        {
-            note:'You need to get your hands on the Axess Card (That’s an NFT by the way!). You can only get an Axess Card from the Initial Launch or the RPS marketplace. In both places, you would need to buy using our RCK Token.',
-            trigger: 0
-        },
-        {
-            note: 'Activate Axess Card',
-            trigger: 1
-        },  
-        {
-            note: 'Each Axess Card will generate a random Play Count - certain allowable number of plays that refreshes every [4] hours.',
-            trigger: 2
-        },
-        {
-            note: 'Note: At the Initial Launch, only LIMITED no. of Axess Cards will be distributed! Axess Cards will be distributed at a limited time and quantity. Thereafter, players would need to buy Axess Cards in the RPS marketplace, at perhaps a higher price.',
-            trigger: 3
-        }
-    ]
-}
-
-
+import mechanics from '@/data/GameMechanics.json'
+import LazyLoad from 'react-lazyload';
 
 const GameMechanics = () => {
     const [guide1 , setGuide1] = React.useState(0)
@@ -37,21 +13,103 @@ const GameMechanics = () => {
 
 
 
-    const toggleForward = () => {
-        if(mechanics.images.length - 1 === guide1){
-            setGuide1(0)
+    const toggleForward = (mech) => {
+        const ImageNum = mech.images.length
+        let guide = guide1;
+        let setGuide = setGuide1;
+        console.log(mech.guideNum)
+        switch (mech.guideNum) {
+            case 1:
+                guide = guide1;
+                setGuide = setGuide1;
+              break;
+            case 2:
+                guide = guide2;
+                setGuide = setGuide2;
+              break;
+            case 3:
+                guide = guide3;
+                setGuide = setGuide3;
+            break;
+            case 4:
+                guide = guide4;
+                setGuide = setGuide4
+                break;
+            case 5:
+                guide = guide5;
+                setGuide = setGuide5;
+                break;
+
+            default:
+                guide = guide1;
+                setGuide = setGuide1;
+          }
+        if(ImageNum - 1 === guide){
+            setGuide(0)
         }else{
-            setGuide1(guide1 + 1)
+            setGuide(guide + 1)
         }
         
     }
 
-    const toggleBackward = () => {
-        if(guide1 == 0){
-            setGuide1(mechanics.images.length - 1)
+    const toggleBackward = (mech) => {
+        const ImageNum = mech.images.length
+        let guide = guide1;
+        let setGuide = setGuide1;
+        switch (mech.guideNum) {
+            case 1:
+                guide = guide1;
+                setGuide = setGuide1;
+              break;
+            case 2:
+                guide = guide2;
+                setGuide = setGuide2;
+              break;
+            case 3:
+                guide = guide3;
+                setGuide = setGuide3;
+            break;
+            case 4:
+                guide = guide4;
+                setGuide = setGuide4
+                break;
+            case 5:
+                guide = guide5;
+                setGuide = setGuide5;
+                break;
+
+            default:
+                guide = guide1;
+                setGuide = setGuide1;
+          }
+
+        if(guide == 0){
+            setGuide(ImageNum - 1)
         }else{
-            setGuide1(guide1 - 1)
+            setGuide(guide - 1)
         }
+    }
+    const findGuide = (mech) => {
+        switch (mech.guideNum) {
+            case 1:
+                return guide1;
+              break;
+            case 2:
+                return guide2;
+              break;
+            case 3:
+                return guide3;
+            break;
+            case 4:
+                return guide4;
+                break;
+            case 5:
+                return guide5;
+                break;
+            default:
+                return guide1;
+               
+          }
     }
 
 
@@ -61,146 +119,40 @@ const GameMechanics = () => {
         <div className={style.mainTitleBox}>
             <h1 className={style.mainTitle}>How It All Works?</h1>
         </div>
-        
-        {/* FIRST SECTION GET AXESS CARD **********************************/}
-        <div className={style.mainContainer1}>
-            <div className={style.carouselContainer}>
-
-                <div className={style.imageBox}>
-                    <img src={`${mechanics.dir}${mechanics.images[guide1]}`} className={style.image}/>
-                    <div className={style.imageButtonContainer}>
-                    <h4 onClick={toggleBackward} className={style.imageButton}>{"<"}</h4>
-                    <h4 onClick={toggleForward} className={style.imageButton}>{">"}</h4>
+        {mechanics.mechanics.map((MD)=>{
+            
+            return (
+               
+                <div className={MD.containerInvert ? style.mainContainer2 : style.mainContainer1}>
+                        
+                        <div className={style.carouselContainer}>
+                            <LazyLoad height={0}>
+                                <div className={style.imageBox}>
+                                    <img src={`${MD.dir}${MD.images[findGuide(MD)]}`} className={style.image}/>
+                                    <div className={style.imageButtonContainer}>
+                                        <h4 onClick={()=> {toggleBackward(MD)}} className={style.imageButton}>{"<"}</h4>
+                                        <h4 onClick={()=> {toggleForward(MD)}} className={style.imageButton}>{">"}</h4>
+                                    </div>
+                                </div>
+                            </LazyLoad>
+                        </div>
+                       
+                        <div className={style.contentContainer}>
+                            <LazyLoad height={0}>
+                                <h2 className={style.contentTitle}>{MD.title}</h2>
+                                {MD.steps.map((data)=>{
+                                    return (
+                                        <p className={data.trigger == findGuide(MD) ? style.text2 : style.text1}>{data.note}</p>
+                                    )
+                                })}   
+                            </LazyLoad> 
+                        </div>
+                       
+                    
                 </div>
-                </div>
-                
-            </div>
-
-            <div className={style.contentContainer}>
-                <h2 className={style.contentTitle}>{mechanics.title}</h2>
-
-                {mechanics.steps.map((data)=>{
-                    return (
-                        <p className={data.trigger == guide1 ? style.text2 : style.text1}>{data.note}</p>
-                    )
-                })}    
-            </div>
-        </div>
-
-        {/* SECOND SECTION Start Playing **********************************/}
-        <div className={style.mainContainer2}>
-            <div className={style.carouselContainer}>
-
-                <div className={style.imageBox}>
-                    <img src={`/Images/ventures/Slide1.JPG`} className={style.image}/>
-                    <div className={style.imageButtonContainer}>
-                    <h4 className={style.imageButton}>{"<"}</h4>
-                    <h4  className={style.imageButton}>{">"}</h4>
-                </div>
-                </div>
-                
-            </div>
-
-            <div className={style.contentContainer}>
-                <h2 className={style.contentTitle}>Start Playing</h2>
-                <p className={style.text1}>Each play round or battle consist of
-                three (3) trays where you will choose
-                the element for each tray: rock, paper
-                or scissors,</p>
-                <p className={style.text1}>The opponent’s elements shows
-                whether you win or lose each tray </p>
-                <p className={style.text1}>Each tray that is won will have a
-                corresponding Point should you win
-                (Example: 2 wins and 1 loss = 2 Points). </p>
-                <p className={style.text1}>Each battle regardless of the
-                outcome will have a corresponding
-                Point.  </p>
-                
-            </div>
-        </div>
-
-
-        {/* Third SECTION GET AXESS CARD **********************************/}
-        <div className={style.mainContainer1}>
-            <div className={style.carouselContainer}>
-
-                <div className={style.imageBox}>
-                    <img src={`/Images/ventures/Slide1.JPG`} className={style.image}/>
-                    <div className={style.imageButtonContainer}>
-                    <h4 className={style.imageButton}>{"<"}</h4>
-                    <h4  className={style.imageButton}>{">"}</h4>
-                </div>
-                </div>
-                
-            </div>
-
-            <div className={style.contentContainer}>
-                <h2 className={style.contentTitle}>Earn Points</h2>
-                <p className={style.text1}>When you have enough Points, you can choose to:  Convert Points to RCK or Replicate your Axess Card</p>
-                <p className={style.text1}>Now with RCK you have access to RCK Ventures or trade in the DEX. </p>
-            </div>
-        </div>
-
-        {/* Forth SECTION Use Points to Replicate or buy Special Axess Card **********************************/}
-        <div className={style.mainContainer2}>
-            <div className={style.carouselContainer}>
-
-                <div className={style.imageBox}>
-                    <img src={`/Images/ventures/Slide1.JPG`} className={style.image}/>
-                    <div className={style.imageButtonContainer}>
-                    <h4 className={style.imageButton}>{"<"}</h4>
-                    <h4  className={style.imageButton}>{">"}</h4>
-                </div>
-                </div>
-                
-            </div>
-
-            <div className={style.contentContainer}>
-                <h2 className={style.contentTitle}>Use Points to Replicate or buy Special Axess Card</h2>
-                <p className={style.text1}>You can choose to replicate your
-                Axess Card to produce another Axess
-                Card once you have the required
-                Points.</p>
-                <p className={style.text1}>An Axess Card must be 1st activated to use. The replicated Axess
-                Card characteristics is generated
-                at random once activated </p>
-                <p className={style.text1}>Seasonal Special Axess Card Release: You Since an Axess is an NFT,
-                there will be limited edition Axess Cards with unique graphic designs as
-                collectible NFTs to be released for player with enough Points. These special Axess Cards will be released in limited time and supply ONLY to those
-                qualified players. </p>
-            </div>
-        </div>
-
-        {/* Fifth SECTION Trade (NFT) Axess Cards  **********************************/}
-        <div className={style.mainContainer1}>
-            <div className={style.carouselContainer}>
-
-                <div className={style.imageBox}>
-                    <img src={`/Images/ventures/Slide1.JPG`} className={style.image}/>
-                    <div className={style.imageButtonContainer}>
-                    <h4 className={style.imageButton}>{"<"}</h4>
-                    <h4  className={style.imageButton}>{">"}</h4>
-                </div>
-                </div>
-                
-            </div>
-
-            <div className={style.contentContainer}>
-                <h2 className={style.contentTitle}>Trade (NFT) Axess Cards </h2>
-                <p className={style.text1}>Axess Cards are NFTs. You can
-                trade them in the marketplace. </p>
-                <p className={style.text1}>The value of the Axess Card may
-                depend whether it is activate.  </p>
-                <p className={style.text1}>Naturally, activated Axess Card
-                with more characteristics (play count
-                and replication count) may demand
-                higher price than inactivated Axess
-                Card or activated Axess Card with
-                less characteristics. </p>
-                <p className={style.text1}>Players can buy and sell Axess
-                Cards using RCK. </p>
-            </div>
-        </div>
+               
+            )
+        })}
 
     </div>
   )

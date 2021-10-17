@@ -34,6 +34,8 @@
     flex-direction: row-reverse;
     padding: 20px 0px;
     width: 90%;
+    background-color: rgba(0, 0, 0, 0.200);
+    border-radius: 10px;
 }
 
 .carouselContainer{
@@ -50,25 +52,41 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    animation-name: Imageanimate;
+    animation-duration: 2s;
 }
+
+@keyframes Imageanimate {
+    0%   {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
 
 
 .image{
-    width: 70%;
-    height: 40%;
+    width: 90%;
+    height: 60%;
 }
 
 .imageButtonContainer{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .imageButton{
     color: rgba(255, 255, 255, 0.800);
     font-size: 40px;
-    margin: 5px 0px;
+    margin: 20px 0px;
     cursor: url('/Svg/pointer.cur'),auto;
+    padding: 0px 20px;
+    border-radius: 50%;
+    background: linear-gradient(-15deg, #96930093, #e608917e);
 }
 
 
@@ -77,7 +95,23 @@
 .contentContainer{
     width: 60%;
     padding: 20px 60px;
+    animation-name: contentAnimate;
+    animation-duration: 2s;
 }
+
+
+
+@keyframes contentAnimate {
+    0%   {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }
+
 
 .contentTitle{
     color: rgba(255, 255, 255, 0.800);
@@ -108,4 +142,59 @@
 
 .buttonText{
     color: rgba(255, 255, 255, 0.800);
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .mainContainer1{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .mainContainer2{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .carouselContainer{
+        width: 100%;
+    }
+    .contentContainer{
+        width: 100%;
+    }
+    .mainTitle{
+        font-size: 40px;
+    }
+    .contentTitle{
+        font-size: 30px;
+    }
+    
+
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    .mainContainer1{
+        padding: 5px 0px;
+    }
+    .mainContainer2{
+        padding: 5px 0px;
+    }
+    .contentContainer{
+        padding: 30px 10px;
+    }
+    .image{
+        width: 95%;
+        height: 60%;
+    }
+    .mainTitle{
+        font-size: 30px;
+    }
+    .contentTitle{
+        font-size: 25px;
+        text-align: center;
+    }
+   
+
 }
