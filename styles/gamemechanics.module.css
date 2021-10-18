@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     height: 100%;
+    margin-top: 50px;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
@@ -19,22 +20,23 @@
 }
 .mainTitle{
     color: rgba(255, 255, 255, 0.800);
-    font-size: 70px;
+    font-size: 60px;
 }
 
 
 .mainContainer1{
     display: flex;
     width: 90%;
-    padding: 20px 0px;
+    margin: 40px 0px;
+    
 }
 
 .mainContainer2{
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px 0px;
+    margin: 40px 0px;
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.200);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
@@ -86,7 +88,7 @@
     cursor: url('/Svg/pointer.cur'),auto;
     padding: 0px 20px;
     border-radius: 50%;
-    background: linear-gradient(-15deg, #96930093, #e608917e);
+    background: linear-gradient(-15deg, #969300c5, #e60891c5);
 }
 
 
@@ -130,7 +132,7 @@
 
 .text2{
     color: rgba(255, 255, 255, 0.800);
-    background: linear-gradient(-15deg, #96930093, #e608917e);
+    background: linear-gradient(-15deg, #969300c5, #e60891c5);
     padding: 10px;
     border-radius: 10px;
 }
@@ -176,6 +178,7 @@
 
 
 @media only screen and (max-width: 500px) {
+    
     .mainContainer1{
         padding: 5px 0px;
     }
@@ -191,11 +194,17 @@
     }
     .mainTitle{
         font-size: 30px;
+        margin: 20px 0px 0px 0px;
     }
     .contentTitle{
         font-size: 25px;
         text-align: center;
     }
-   
-
+    .text1{
+       font-size: 15px;
+    }
+    
+    .text2{
+        font-size: 16px;
+    }
 }

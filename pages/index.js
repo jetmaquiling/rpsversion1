@@ -12,6 +12,8 @@ import LazyLoad from 'react-lazyload';
 import { MdArrowForward,MdCloudUpload,MdShoppingCart,MdLock,MdVideogameAsset, MdKeyboardArrowUp} from "react-icons/md";
 import ScrollButton from '@/components/buttons/scroll';
 import GameMechanics from '@/components/caveats/gamemechanics';
+import NFT from '@/components/caveats/nft';
+import Recruit from '@/components/caveats/recruit';
 
 
 
@@ -90,7 +92,9 @@ export default function Home() {
           </div>
           </LazyLoad>
       </div>
+      <NFT/>
       <GameMechanics/>
+      <Recruit/>
       {/* <LazyLoad height={100}>
         <Countdown/>
       </LazyLoad> */}
