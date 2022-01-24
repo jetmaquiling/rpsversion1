@@ -1,162 +1,145 @@
-.main{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat, repeat;
-    background-image:url("/Background/introduction-bg.png");
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat, repeat;
+  background-image: url("/Background/introduction-bg.png");
 }
 
-.mainTitleBox{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    
+.mainTitleBox {
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
-
-.mainContainer{
-    display: flex;
-    width: 100%;
-    
+.mainContainer {
+  display: flex;
+  width: 100%;
 }
 
-.imageContainer{
-    width: 40%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.imageContainer {
+  width: 40%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.imageBox{
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    animation-name: Imageanimate;
-    animation-duration: 2s;
+.imageBox {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation-name: Imageanimate;
+  animation-duration: 2s;
 }
 
 @keyframes Imageanimate {
-    0%   {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
   }
-
-
-.image{
-    width: 90%;
-    height: 60%;
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
-
-
-
-
-.contentContainer{
-    width: 60%;
-    padding: 20px 60px;
-    animation-name: contentAnimate;
-    animation-duration: 2s;
+.image {
+  width: 90%;
+  height: 60%;
 }
 
-
+.contentContainer {
+  width: 60%;
+  padding: 20px 60px;
+  animation-name: contentAnimate;
+  animation-duration: 2s;
+}
 
 @keyframes contentAnimate {
-    0%   {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
   }
-
-
-.contentTitle{
-    color: rgba(255, 255, 255, 0.800);
-    font-size: 35px;
-    margin: 0px;
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
-.text1{
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.800);
-    border-radius: 10px;
-    margin: 15px 0px;
+.contentTitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 35px;
+  margin: 0px;
 }
 
-
-
-
-
-.buttonText{
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.800);
-    font-size: 15px;
-    cursor: url('/Svg/pointer.cur'),auto;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin: 20px 0px;
-    background: linear-gradient(-15deg, #969300c5, #e60891c5);
+.text1 {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 15px 0px;
 }
 
+.buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
-
+.buttonText {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  cursor: url("/Svg/pointer.cur"), auto;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 20px 0px;
+  background: linear-gradient(-15deg, #969300c5, #e60891c5);
+}
 
 @media only screen and (max-width: 1000px) {
-    .mainContainer{
-       flex-direction: column-reverse;
-        
-    }
+  .mainContainer {
+    flex-direction: column-reverse;
+  }
 
-    .imageContainer{
-        width: 100%;
-        
-    }
-    
-    .contentContainer{
-        width: 100%;
-        
-    }
+  .imageContainer {
+    width: 100%;
+  }
 
+  .contentContainer {
+    width: 100%;
+  }
 }
 
-
 @media only screen and (max-width: 500px) {
-    .contentContainer{
-        padding: 0px 10px;
-    }
+  .contentContainer {
+    padding: 0px 10px;
+  }
 
-    .contentTitle{
-        text-align: center;
-        font-size: 25px;
-    }
-    
-    .text1{
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.800);
-        border-radius: 10px;
-        margin: 15px 0px;
-    }
-    .buttonText{
-        float: right;
-        margin: 20px;
-    }
-    
-    
-   
+  .contentTitle {
+    text-align: center;
+    font-size: 25px;
+  }
 
+  .text1 {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin: 15px 0px;
+  }
+  .buttonText {
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

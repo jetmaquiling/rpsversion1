@@ -1,548 +1,510 @@
 .main {
-    width: 100%;
-    background-color: #000333;
-    height: 100%;
-    overflow: hidden;
-   
+  width: 100%;
+  background-color: #000333;
+  height: 100%;
+  overflow: hidden;
 }
 /**********************************/
 
-.sectionError{
-    height: 100vh;
-    background-size: cover;
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.sectionError {
+  height: 100vh;
+  background-size: cover;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .section {
-    height: 120vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat, repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-attachment: fixed;
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat, repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-attachment: fixed;
 }
 
 .section1 {
-    background-image: url("/Background/banner-bg.png");
-    height: 140vh;
-    max-height: 900px;
-    overflow: hidden;
+  background-image: url("/Background/banner-bg.png");
+  height: 140vh;
+  max-height: 900px;
+  overflow: hidden;
 }
-.section2{
-    background: linear-gradient(rgba(0, 57, 143, 0.9), rgba(0,3,51, 0.9)), url("/Background/guide-bg.png");
-    background-attachment: scroll;
-    justify-content: flex-start;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
+.section2 {
+  background: linear-gradient(rgba(0, 57, 143, 0.9), rgba(0, 3, 51, 0.9)),
+    url("/Background/guide-bg.png");
+  background-attachment: scroll;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 .section3 {
-    height: 100%;
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
-    justify-content: center;
-    background-color: #fff;
+  height: 100%;
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0% 100%);
+  justify-content: center;
+  background-color: #fff;
 }
 /*************************************/
 @keyframes bodyanimate {
-    0%   {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
   }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 
 .mainBody {
-    max-width: 1200px;
-    padding: 20px;
-    height: 100%;
-    display: flex;
-    animation-name: bodyanimate;
-    animation-duration: 2s;
+  max-width: 1200px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  animation-name: bodyanimate;
+  animation-duration: 2s;
 }
 
 /* .mainBody1 {
     
 } */
 
-.mainBody2{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 100px 0px;
+.mainBody2 {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0px;
 }
 
 .mainBody3 {
-
-    margin: 100px 0px;
+  margin: 100px 0px;
 }
 
 /**************************************/
 
-
-
-
 .bodyContent {
-    width: 50%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
 .bodyContent1 {
-    width: 40%;
-    height: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: flex-end;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
 }
 
 .bodyContent2 {
-    width: 70%;
-    align-items: center;
-    text-align: center;
+  width: 70%;
+  align-items: center;
+  text-align: center;
 }
 
 .bodyContent3 {
-    flex-direction: column;
-    margin: 0px 20px;
+  flex-direction: column;
+  margin: 0px 20px;
 }
-
 
 /*******************************************/
 
-
-
 .bodyImage {
-    width: 50%;
-    height: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
 }
 
 .bodyImage1 {
-    height: 100%;
-    width: 30%;
-    align-items: flex-end;
+  height: 100%;
+  width: 30%;
+  align-items: flex-end;
 }
 .bodyImage2 {
-    overflow: hidden;
+  overflow: hidden;
 }
 /**************************************/
 
 .image {
-    width: 300px;
+  width: 300px;
 }
 
-
-.imagebanner{
-    width: 170%;
+.imagebanner {
+  width: 170%;
 }
 
-.imagemiddlebanner{
-    width: 100%;
+.imagemiddlebanner {
+  width: 100%;
 }
 
-.mobileImage{
-    display: none;
+.mobileImage {
+  display: none;
 }
 
-.tokenomiksImage{
-    width: 500px;
+.tokenomiksImage {
+  width: 500px;
 }
 /********************************************/
 
 .titleBody {
-    color: #fff;
-    font-size: 35px;
- }
+  color: #fff;
+  font-size: 35px;
+}
 
 /* .titleBody1 {
     
  } */
 
-
- .titleBody2 {
-    font-size: 55px;
-    color: rgba(255, 255, 255, 0.800);
-    margin-bottom: 20px;
-    text-justify:auto ;
- }
-
- .titleBody3 {
-    font-size: 25px;
-    color: rgba(255, 255, 255, 0.800);
-    margin-bottom: 50px;
-    text-align: center;
- }
-
- /********************************************/
- 
-.textBody{
-    color: rgba(255, 255, 255, 0.800);
-    font-weight: 400;
-    font-size: 20px;
+.titleBody2 {
+  font-size: 55px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  text-justify: auto;
 }
 
-.textBody2{
-    color: rgba(255, 255, 255, 0.800);
-    font-weight: 500;
-    margin: 10px 0px;
+.titleBody3 {
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+  text-align: center;
 }
 
- /********************************************/
+/********************************************/
 
-
-.buttonContainer{
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
+.textBody {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.buttonContainer2{
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    margin: 20px 0px;
+.textBody2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  margin: 10px 0px;
 }
 
-.buttonBox{
-    margin: 0px 10px 0px 0px;
-    cursor: url('/Svg/pointer.cur'),auto;
-    transition: 0.5s;
-    border-radius: 25px;
-    background: linear-gradient(-100deg, #e7d002, #e60891,  #f5007b, #cac700);
-    background-size: 400% 400%;
-    display: flex;
-    align-items: center;
+/********************************************/
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 
+.buttonContainer2 {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin: 20px 0px;
+}
+
+.buttonBox {
+  margin: 0px 10px 0px 0px;
+  cursor: url("/Svg/pointer.cur"), auto;
+  transition-duration: 1.5s;
+  border-radius: 25px;
+  background: linear-gradient(-15deg, #c2bf00, #eb0091);
+  display: flex;
+  align-items: center;
+}
 
 .buttonBox:hover {
-    transition: 0.5s;
-    background-position: 100% 50%;
+  transition-duration: 1.5s;
+  background-position: 100% 50%;
+  background: linear-gradient(-15deg, #e4e001e5, #ff009de5);
 }
 /****************************************/
 
-.buttonBox1{
-    padding: 10px 40px;
+.buttonBox1 {
+  padding: 10px 40px;
 }
 
-.buttonBox2{
-    padding: 10px 40px;
-    margin: 25px 0px;
-}
-
-
-
-/****************************************/
-.h4animate{
-    color: rgba(255, 255, 255, 0.900);
-    transition: 0.5s;
-    margin: 0px;
-}
-
-.h4animate2{
-    color: rgba(8, 8, 8, 0.9);
-    transition: 0.5s;
-    margin: 0px;
-    
-}
-/****************************************/
-
-.icon{
-    color: rgb(255, 255, 255);
-    margin: 0px 5px;
-}
-.symbol{
-    margin: 0px 5px -10px 0px;
-    font-size: 40px;
+.buttonBox2 {
+  padding: 10px 40px;
+  margin: 25px 0px;
 }
 
 /****************************************/
-.documentContainer{
+.h4animate {
+  color: rgba(255, 255, 255, 0.9);
+  transition: 0.5s;
+  margin: 0px;
+}
+
+.h4animate2 {
+  color: rgba(8, 8, 8, 0.9);
+  transition: 0.5s;
+  margin: 0px;
+}
+/****************************************/
+
+.icon {
+  color: rgb(255, 255, 255);
+  margin: 0px 5px;
+}
+.symbol {
+  margin: 0px 5px -10px 0px;
+  font-size: 40px;
+}
+
+/****************************************/
+.documentContainer {
+  display: flex;
+  margin: 50px 0px;
+  justify-content: space-evenly;
+}
+
+.documentBox {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+  /****************************************/
+  /* .section {
+
+    } */
+
+  .section1 {
+    height: 100%;
+  }
+  .section2 {
+    height: 100%;
+  }
+  .section3 {
+    height: 100%;
+  }
+  /****************************************/
+
+  .mainBody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .mainBody1 {
+    flex-direction: column-reverse;
+    margin: 100px 0px 0px 0px;
+    padding: 0px;
+  }
+
+  .mainBody2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-end;
+  }
+
+  .mainBody3 {
+    margin: 100px 0px;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-end;
+  }
+
+  /*********************************************/
+
+  .bodyContent {
+    width: 95%;
+    height: 60%;
+  }
+
+  .bodyContent1 {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 200%;
+  }
+
+  .bodyContent2 {
+    justify-content: flex-start;
+    height: 60%;
+  }
+
+  .bodyContent3 {
+    height: 100%;
+    margin: 50px 0px;
+  }
+
+  /*********************************************/
+
+  .bodyImage {
+    width: 200px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bodyImage1 {
+    display: none;
+  }
+  .bodyImage2 {
+    width: 90%;
+    height: 90%;
+  }
+
+  .imagemiddlebanner {
+    display: none;
+  }
+
+  .mobileImage {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobileImageItem {
+    width: 30%;
+  }
+
+  /********************************************/
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .documentContainer {
     display: flex;
     margin: 50px 0px;
     justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
 
-}
-
-.documentBox{
-    width: 30%;
+  .documentBox {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 30px;
+  }
 }
 
-
-
-
-@media only screen and (max-width: 1000px) {
-    /****************************************/
-    /* .section {
-
+@media only screen and (max-width: 500px) {
+  /* .section {
     } */
+  .section1 {
+    height: 100%;
+    max-height: none;
+  }
+  .section2 {
+    height: 100%;
+  }
+  .section3 {
+    height: 100%;
+  }
+  /********************************************/
 
-    .section1 {
-        height: 100%;
-    }
-    .section2 {
-        height: 100%;
-    }
-    .section3 {
-        height: 100%;
-    }
-    /****************************************/
-
-    .mainBody{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    .mainBody1{
-        flex-direction: column-reverse;
-        margin: 100px 0px 0px 0px;
-        padding: 0px;
-    }
-
-    .mainBody2{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: flex-end;
-    }
-
-    .mainBody3{
-        margin: 100px 0px;
-        flex-direction: column;
-        align-items: center;
-        align-content: flex-end;
-    }
-
-    /*********************************************/
-
-    .bodyContent {
-        width: 95%;
-        height: 60%;
-    }
-
-    .bodyContent1 {
-        justify-content: center;
-        text-align: center;
-        width: 100%;
-        height: 200%;
-    }
-    
-    .bodyContent2 {
-        justify-content: flex-start;
-        height: 60%;
-    }
-
-    .bodyContent3 {
-        height: 100%;
-        margin: 50px 0px;
-    }
-    
-    /*********************************************/
-
-    .bodyImage{
-        width: 200px;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .bodyImage1 {
-        display: none;
-        
-    }
-    .bodyImage2 {
-        width: 90%;
-        height: 90%;
-    }
-
-    .imagemiddlebanner{
-        display: none;
-    }
-    
-    .mobileImage{
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .mobileImageItem{
-        width: 30%;
-    }
-    
-    /********************************************/
-
-    .buttonContainer{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-
-
-    .documentContainer{
-        display: flex;
-        margin: 50px 0px;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-    
-    }
-    
-    .documentBox{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-
+  .mainBody {
+    height: 100%;
+    padding: 5px;
   }
 
-  
-
-  @media only screen and (max-width: 500px) {
-    
-    /* .section {
-    } */
-    .section1 {
-        height: 100%;
-        max-height: none;
-    }
-    .section2 {
-        height: 100%;
-    }
-    .section3 {
-        height: 100%;
-    }
-    /********************************************/
-
-    .mainBody{
-        height: 100%;
-        padding: 5px;
-    }
-
-    .mainBody1{
-        margin: 100px 0px 0px 0px;
-        padding: 0px;
-    }
-
-    .mainBody2{
-        margin: 150px 0px
-    }
-
-    .mainBody3{
-        margin: 50px 0px;
-    }
-    
-    /********************************************/
-
-    .bodyContent {
-        width: 95%;
-        
-    }
-    .bodyContent1 {
-        height: 100%;
-    }
-    .bodyContent2 {
-        justify-content: flex-start;
-        height: 55%;
-    }
-
-    /* .bodyContent3 {
-        
-    } */
-    .bodyImage {
-        width: 150px;
-    }
-
-   
-    .bodyImage2 {
-        width: 90%;
-        height: 90%;
-    }
-
-    .image1{
-        width: 200px;
-    }
-    
-
-    /********************************************/
-    .titleBody {
-        
-        font-size: 22px;
-     }
-
-     .titleBody2 {
-        font-size: 22px;
-     }
-
-    /********************************************/
-
-    .textBody{
-        color: rgba(255, 255, 255, 0.850);
-        font-size: 18px;
-    }
-
-    .textBody2{
-        font-size: 15px;
-    }
-    
-    /********************************************/
-
-
-    .tinylogoToken{
-        width: 10%;
-        margin: 0px 5px 0px 0px;
-    }
-
-    .tokenomiksImage{
-        width: 100%;
-    }
-
-    .h4animate{
-        font-size: 13px;
-        transition: 0.1s;
-    }
-
-    /********************************************/
-
-    
-
-    
-    .h4animate:hover{
-        transform: none;
-    }
-
-    .buttonContainer{
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .buttonBox{
-        margin: 10px;
-        max-width: 200px;
-    }
-
-
+  .mainBody1 {
+    margin: 100px 0px 0px 0px;
+    padding: 0px;
   }
+
+  .mainBody2 {
+    margin: 150px 0px;
+  }
+
+  .mainBody3 {
+    margin: 50px 0px;
+  }
+
+  /********************************************/
+
+  .bodyContent {
+    width: 95%;
+  }
+  .bodyContent1 {
+    height: 100%;
+  }
+  .bodyContent2 {
+    justify-content: flex-start;
+    height: 55%;
+  }
+
+  /* .bodyContent3 {
+        
+    } */
+  .bodyImage {
+    width: 150px;
+  }
+
+  .bodyImage2 {
+    width: 90%;
+    height: 90%;
+  }
+
+  .image1 {
+    width: 200px;
+  }
+
+  /********************************************/
+  .titleBody {
+    font-size: 22px;
+  }
+
+  .titleBody2 {
+    font-size: 22px;
+  }
+
+  /********************************************/
+
+  .textBody {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+  }
+
+  .textBody2 {
+    font-size: 15px;
+  }
+
+  /********************************************/
+
+  .tinylogoToken {
+    width: 10%;
+    margin: 0px 5px 0px 0px;
+  }
+
+  .tokenomiksImage {
+    width: 100%;
+  }
+
+  .h4animate {
+    font-size: 13px;
+    transition: 0.1s;
+  }
+
+  /********************************************/
+
+  .h4animate:hover {
+    transform: none;
+  }
+
+  .buttonContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonBox {
+    margin: 10px;
+    max-width: 200px;
+  }
+}
