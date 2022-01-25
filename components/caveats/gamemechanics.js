@@ -131,7 +131,7 @@ const GameMechanics = () => {
   return (
     <div className={style.main}>
       <div className={style.mainTitleBox}>
-        <h1 className={style.mainTitle}>How it all works?</h1>
+        <h1 className={style.mainTitle}>How it all Works</h1>
       </div>
       {mechanics.mechanics.map((MD) => {
         return (

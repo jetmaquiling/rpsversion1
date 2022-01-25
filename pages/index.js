@@ -21,6 +21,7 @@ import ScrollButton from "@/components/buttons/scroll";
 import GameMechanics from "@/components/caveats/gamemechanics";
 import NFT from "@/components/caveats/nft";
 import Recruit from "@/components/caveats/recruit";
+import Video from "@/components/caveats/videosection";
 
 export default function Home() {
   return (
@@ -45,14 +46,16 @@ export default function Home() {
         />
         <meta property="og:image" content="./Thumbnail/rps.JPG" />
       </Head>
+
       <ScrollButton />
+
       <div className={`${style.section} ${style.section1}`}>
         <HeadV2 />
-
+        {/* <Video /> */}
         <div className={`${style.mainBody} ${style.mainBody1}`}>
           <div className={`${style.bodyImage} ${style.bodyImage1}`}>
             <img
-              src="/Images/homepage/left-banner.png"
+              src="/Images/homepage/banner-1.png"
               alt="Token"
               className={`${style.image} ${style.imagebanner}`}
             />
@@ -80,7 +83,7 @@ export default function Home() {
 
               <Link href="/Files/RCK Whitepaper.pdf">
                 <div className={`${style.buttonBox} ${style.buttonBox1}`}>
-                  <h4 className={style.h4animate}>Play Now </h4>
+                  <h4 className={style.h4animate}>Play Now</h4>
                 </div>
               </Link>
             </div>
@@ -92,7 +95,7 @@ export default function Home() {
             />
             <div className={style.mobileImage}>
               <img
-                src="/Images/homepage/left-banner.png"
+                src="/Images/homepage/banner-1.png"
                 alt="Token"
                 className={`${style.image} ${style.mobileImageItem}`}
               />
@@ -102,7 +105,7 @@ export default function Home() {
                 className={`${style.image} ${style.mobileImageItem}`}
               />
               <img
-                src="/Images/homepage/right-banner.png"
+                src="/Images/homepage/banner-2.png"
                 alt="Token"
                 className={`${style.image} ${style.mobileImageItem}`}
               />
@@ -111,7 +114,7 @@ export default function Home() {
 
           <div className={`${style.bodyImage} ${style.bodyImage1}`}>
             <img
-              src="/Images/homepage/right-banner.png"
+              src="/Images/homepage/banner-2.png"
               alt="Token"
               className={`${style.image} ${style.imagebanner}`}
             />
@@ -133,13 +136,8 @@ export default function Home() {
               <p className={style.textBody2}>
                 RPS Platform — The most simplest Play To Earn Ecosystem, built
                 on Binance Smart Chain. Incorporation Gaming, NFTs and DeFi
-                together into exciting, diverse, and rewarding opportunities.
-              </p>
-
-              <p className={style.textBody2}>
-                RPS Game will be tied directly to the BAS token and NFT reward
-                marketplace, allowing infinite strategies for users, players,
-                and investors to earn.
+                (coming soon) together into exciting, diverse, and rewarding
+                opportunities.
               </p>
 
               <p className={style.textBody2}>
@@ -147,11 +145,16 @@ export default function Home() {
                 what people can do with their cryptocurrency forever.
               </p>
 
-              <Link href="/v1">
+              <div className={`${style.buttonContainer}`}>
+                <Link href="/v1">
+                  <div className={`${style.buttonBox} ${style.buttonBox2}`}>
+                    <h4 className={style.h4animate}>Play Now</h4>
+                  </div>
+                </Link>
                 <div className={`${style.buttonBox} ${style.buttonBox2}`}>
-                  <h4 className={style.h4animate}>Play Now</h4>
+                  <h4 className={style.h4animate}>Watch Teaser</h4>
                 </div>
-              </Link>
+              </div>
             </div>
           </div>
         </LazyLoad>

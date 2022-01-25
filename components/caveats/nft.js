@@ -12,31 +12,23 @@ const NFT = () => {
           <LazyLoad height={0}>
             <h2 className={style.contentTitle}>NFT AXESS CARD</h2>
             <p className={style.text1}>
-              Open lootboxes and receive the most innovative NFT's in the crypto
-              space.
+              Buy now RPS Axess Card and Activate It, Get the chance to unlock
+              unique arts with random play count.
             </p>
-            <p className={style.text1}>
-              BAS NFT's will provide people with a number of use-cases as
-              individual pieces; from APR returns on farming, to game advantages
-              that ultimately provide utility to earn faster. These NFT's will
-              be utilised across all of the various game modes and new models,
-              providing an enormous amount of utility to earn in a variety of
-              ways.
-            </p>
+
             <p className={style.text1}>
               Players can interchange a variety of NFT's through a customisable
               player character equip slot mechanism in our first game model.
-              Collect various NFT's and complete outfits / sets that will award
-              people with a variety of bonus use-cases.
+              Collect multiple various NFT's with cool and unique outfits /
+              sets..
             </p>
             <p className={style.text1}>
-              Some NFT's have a chance to evolve on the basis of challenging
-              other players to a battle.
+              Some NFT's have a chance to be replicated and can be activated as
+              an Axess Card to play.
             </p>
             <p className={style.text1}>
-              Risk your rewards for the chance of boosting your use-case
-              advantages; and visually upgrade to obtain the first ever VFX /
-              animated 3D NFT's!
+              Use your claimed points for the chance of replicating your NFT
+              Axess Card; and visually obtain new NFT Axess Card.
             </p>
             <div className={style.buttonContainer}>
               <h4 className={style.buttonText}>BUY AXESS CARD </h4>

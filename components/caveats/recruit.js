@@ -12,18 +12,19 @@ const Recruit = () => {
           <h2 className={style.contentTitle}>WORK WITH US</h2>
           <p className={style.text1}>
             Through our Work With Us platform, we are actively working with game
-            creators and studios to bring new game offerings to the Block Ape
-            Scissors ecosystem <br /> This will enable a diverse suite of
-            playable games that interact directly with the play to earn model,
-            for potentially infinite available earning strategies.
+            creators and studios to bring new game offerings to the RPS
+            ecosystem <br /> This will enable a diverse suite of playable games
+            that interact directly with the play to earn model, for potentially
+            infinite available earning strategies.
           </p>
           <p className={style.text1}>
-            Some NFT's have a chance to evolve on the basis of challenging other
-            players to a battle.
+            Some NFT's have a chance to evolve on the basis of replicating other
+            Axess Card.
           </p>
           <p className={style.text1}>
-            We are actively looking to expand our team; Hire Us to help you
-            bring blockchain solutions to your game <br /> - inquire below!
+            We are actively looking to expand our team; Contact Us, let's help
+            each other bring blockchain solutions to the RPS game <br /> -
+            inquire below!
           </p>
           <a href="mailto: rpsrck@gmail.com">
             <div className={style.buttonContainer}>
