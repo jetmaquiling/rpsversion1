@@ -5,7 +5,7 @@
       "guideNum": 1,
       "containerInvert": false,
       "dir": "/Mechanics/Guide1/",
-      "images": ["Slide1.JPG", "Slide2.JPG", "Slide10.JPG", "Slide3.JPG"],
+      "images": ["Slide1.jpg", "Slide2.jpg", "Slide10.jpg", "Slide3.jpg"],
       "steps": [
         {
           "note": "1. You need to get your hands on the Axess Card (That’s an NFT by the way!). You can only get an Axess Card from the Initial Launch or the RPS marketplace. In both places, you would need to buy using BNB.",
@@ -30,7 +30,7 @@
       "guideNum": 2,
       "containerInvert": true,
       "dir": "/Mechanics/Guide1/",
-      "images": ["Slide4.JPG", "Slide5.JPG", "Slide6.JPG", "Slide7.JPG"],
+      "images": ["Slide4.jpg", "Slide5.jpg", "Slide6.jpg", "Slide7.jpg"],
       "steps": [
         {
           "note": "1. Create a player account and assign your axess card.",
@@ -55,7 +55,7 @@
       "guideNum": 3,
       "containerInvert": false,
       "dir": "/Mechanics/Guide1/",
-      "images": ["Slide8.JPG", "Slide9.JPG", "Slide10.JPG"],
+      "images": ["Slide8.jpg", "Slide9.jpg", "Slide10.jpg"],
       "steps": [
         {
           "note": "1. You can claim your earned points in the Player Account.",
@@ -76,7 +76,7 @@
       "guideNum": 4,
       "containerInvert": true,
       "dir": "/Mechanics/Guide1/",
-      "images": ["Slide10.JPG", "Slide10.JPG", "Slide10.JPG"],
+      "images": ["Slide10.jpg", "Slide10.jpg", "Slide10.jpg"],
       "steps": [
         {
           "note": "1. You can choose to replicate your Axess Card to produce another Axess Card once you have the required Points.",
@@ -97,7 +97,7 @@
       "guideNum": 5,
       "containerInvert": false,
       "dir": "/Mechanics/Guide1/",
-      "images": ["Slide10.JPG", "Slide10.JPG", "Slide10.JPG", "Slide10.JPG"],
+      "images": ["Slide10.jpg", "Slide10.jpg", "Slide10.jpg", "Slide10.jpg"],
       "steps": [
         {
           "note": "1. Axess Cards are NFTs. You can trade them in the marketplace.",

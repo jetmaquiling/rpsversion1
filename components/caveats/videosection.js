@@ -24,7 +24,7 @@ const VideoSection = () => {
       >
         <div className={style.videoContainer}>
           <img
-            src="/Images/cover/Slide1.JPG"
+            src="/Images/cover/Slide1.jpg"
             className={cover1 ? style.coverUp : style.coverDown}
           />
           <iframe
@@ -50,7 +50,7 @@ const VideoSection = () => {
       >
         <div className={style.videoContainer}>
           <img
-            src="/Images/cover/Slide2.JPG"
+            src="/Images/cover/Slide2.jpg"
             className={cover2 ? style.coverUp : style.coverDown}
           />
           <iframe
@@ -76,7 +76,7 @@ const VideoSection = () => {
       >
         <div className={style.videoContainer}>
           <img
-            src="/Images/cover/Slide3.JPG"
+            src="/Images/cover/Slide3.jpg"
             className={cover3 ? style.coverUp : style.coverDown}
           />
           <iframe
@@ -87,25 +87,6 @@ const VideoSection = () => {
           ></iframe>
         </div>
       </div>
-      {/* <video
-        autoPlay
-        muted
-        loop
-        className={style.video}
-        poster="/Thumbnail/ebuddyThumbnail.png"
-      >
-        <source src="/Video/game.mp4" type="video/mp4" />
-      </video>
-
-      <video
-        autoPlay
-        muted
-        loop
-        className={style.video}
-        poster="/Thumbnail/ebuddyThumbnail.png"
-      >
-        <source src="/Video/manager.mp4" type="video/mp4" />
-      </video> */}
     </div>
   );
 };
