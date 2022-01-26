@@ -51,7 +51,7 @@ export default function Home() {
 
       <div className={`${style.section} ${style.section1}`}>
         <HeadV2 />
-        {/* <Video /> */}
+
         <div className={`${style.mainBody} ${style.mainBody1}`}>
           <div className={`${style.bodyImage} ${style.bodyImage1}`}>
             <img
@@ -121,6 +121,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Video />
 
       <div className={`${style.section} ${style.section2}`}>
         <LazyLoad height={100}>
