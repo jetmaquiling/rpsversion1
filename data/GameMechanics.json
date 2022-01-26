@@ -4,7 +4,7 @@
       "title": "Step 1: Get Axess Card",
       "guideNum": 1,
       "containerInvert": false,
-      "dir": "/Mechanics/Guide1/",
+      "dir": "/Images/gamemechanics/",
       "images": ["Slide1.jpg", "Slide2.jpg", "Slide10.jpg", "Slide3.jpg"],
       "steps": [
         {
@@ -29,7 +29,7 @@
       "title": "Step 2: Start Playing",
       "guideNum": 2,
       "containerInvert": true,
-      "dir": "/Mechanics/Guide1/",
+      "dir": "/Images/gamemechanics/",
       "images": ["Slide4.jpg", "Slide5.jpg", "Slide6.jpg", "Slide7.jpg"],
       "steps": [
         {
@@ -54,7 +54,7 @@
       "title": "Step 3: Earn Points",
       "guideNum": 3,
       "containerInvert": false,
-      "dir": "/Mechanics/Guide1/",
+      "dir": "/Images/gamemechanics/",
       "images": ["Slide8.jpg", "Slide9.jpg", "Slide10.jpg"],
       "steps": [
         {
@@ -75,7 +75,7 @@
       "title": "Step 4: Buy Special Axess Card (coming soon)",
       "guideNum": 4,
       "containerInvert": true,
-      "dir": "/Mechanics/Guide1/",
+      "dir": "/Images/gamemechanics/",
       "images": ["Slide10.jpg", "Slide10.jpg", "Slide10.jpg"],
       "steps": [
         {
@@ -96,7 +96,7 @@
       "title": "Trade (NFT) Axess Cards (coming soon)",
       "guideNum": 5,
       "containerInvert": false,
-      "dir": "/Mechanics/Guide1/",
+      "dir": "/Images/gamemechanics/",
       "images": ["Slide10.jpg", "Slide10.jpg", "Slide10.jpg", "Slide10.jpg"],
       "steps": [
         {
