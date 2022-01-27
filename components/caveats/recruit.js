@@ -44,7 +44,7 @@ const Recruit = () => {
               </h4>
             </a>
 
-            <a href="https://discord.gg/NY4rJP64Sn" target="_blank">
+            <a href="https://discord.gg/MPjm6NTty3" target="_blank">
               <h4 className={style.buttonText}>
                 <FaDiscord className={style.icon} />
               </h4>

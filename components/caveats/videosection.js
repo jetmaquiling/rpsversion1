@@ -34,6 +34,7 @@ const VideoSection = () => {
             poster="/Thumbnail/ebuddyThumbnail.png"
           ></iframe>
         </div>
+        <span>Video Teaser</span>
       </div>
 
       <div
@@ -60,6 +61,7 @@ const VideoSection = () => {
             poster="/Thumbnail/ebuddyThumbnail.png"
           ></iframe>
         </div>
+        <span>GamePlay</span>
       </div>
 
       <div
@@ -86,6 +88,7 @@ const VideoSection = () => {
             poster="/Thumbnail/ebuddyThumbnail.png"
           ></iframe>
         </div>
+        <span>Manager Guide</span>
       </div>
     </div>
   );

@@ -399,6 +399,7 @@
   /* .section {
     } */
   .section1 {
+    background-position: left;
     height: 100%;
     max-height: none;
   }

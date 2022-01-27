@@ -4,6 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 30px 0px;
+  background-color: #0d346e;
 }
 
 .coverDown {
@@ -29,6 +31,13 @@
 .videoBox {
   width: 100%;
   overflow: hidden;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.videoBox span {
+  color: #fff;
+  font-size: 30px;
 }
 
 .videoContainer {
