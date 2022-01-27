@@ -95,13 +95,31 @@
 }
 
 .buttonText {
-  display: inline-block;
+  display: flex;
   color: rgba(255, 255, 255, 0.8);
-  font-size: 15px;
+  font-size: 25px;
   cursor: url("/Svg/pointer.cur"), auto;
-  padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 50px;
   margin: 20px 10px;
+  padding: 10px;
+  background: linear-gradient(-15deg, #969300c5, #e60891c5);
+}
+
+.buttonText {
+  display: flex;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  cursor: url("/Svg/pointer.cur"), auto;
+  border-radius: 50px;
+  margin: 10px 10px;
+  padding: 10px;
+  background: linear-gradient(-15deg, #969300c5, #e60891c5);
+  transition: 0.5s;
+}
+
+.buttonText:hover {
+  transition: 0.5s;
+  opacity: 0.5;
   background: linear-gradient(-15deg, #969300c5, #e60891c5);
 }
 
@@ -117,16 +135,16 @@
 
   .buttonContainer {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     width: 100%;
   }
   .buttonText {
+    display: flex;
     color: rgba(255, 255, 255, 0.8);
-    font-size: 15px;
-    cursor: url("/Svg/pointer.cur"), auto;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin: 5px 0px;
-    background: linear-gradient(-15deg, #969300c5, #e60891c5);
+    font-size: 25px;
+    border-radius: 50px;
+    margin: 10px 5px;
+    padding: 10px;
+    transition: 0.5s;
   }
 }
