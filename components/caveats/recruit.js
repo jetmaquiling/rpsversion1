@@ -30,28 +30,38 @@ const Recruit = () => {
           </p>
           <p className={style.text1}>
             We are actively looking to expand our team; Contact Us, let's help
-            each other bring blockchain solutions to the RPS game <br /> -
-            inquire below!
+            each other bring blockchain solutions to the RPS game
           </p>
           <div className={style.buttonContainer}>
-            <a href="">
+            <a href="https://www.facebook.com/rpsaxess/" target="_blank">
+              <h4 className={style.buttonText}>
+                <FaFacebookF className={style.icon} />
+              </h4>
+            </a>
+            <a href="https://twitter.com/RpsAxess" target="_blank">
               <h4 className={style.buttonText}>
                 <FaTwitter className={style.icon} />
               </h4>
             </a>
 
-            <h4 className={style.buttonText}>
-              <FaFacebookF className={style.icon} />
-            </h4>
-            <h4 className={style.buttonText}>
-              <FaDiscord className={style.icon} />
-            </h4>
-            <h4 className={style.buttonText}>
-              <FaInstagram className={style.icon} />
-            </h4>
-            <h4 className={style.buttonText}>
-              <FaPinterestP className={style.icon} />
-            </h4>
+            <a href="https://discord.gg/NY4rJP64Sn" target="_blank">
+              <h4 className={style.buttonText}>
+                <FaDiscord className={style.icon} />
+              </h4>
+            </a>
+            <a href="https://www.instagram.com/rpsaxess/" target="_blank">
+              <h4 className={style.buttonText}>
+                <FaInstagram className={style.icon} />
+              </h4>
+            </a>
+            <a
+              href="https://www.pinterest.com/rpsaxessofficial/"
+              target="_blank"
+            >
+              <h4 className={style.buttonText}>
+                <FaPinterestP className={style.icon} />
+              </h4>
+            </a>
           </div>
         </LazyLoad>
       </div>
