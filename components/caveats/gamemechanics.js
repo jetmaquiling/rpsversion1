@@ -175,6 +175,7 @@ const GameMechanics = () => {
                 {MD.steps.map((data, index) => {
                   return (
                     <p
+                      key={index}
                       onClick={() => {
                         toggleSlide(index, MD);
                       }}

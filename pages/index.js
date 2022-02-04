@@ -75,15 +75,22 @@ export default function Home() {
             </p>
 
             <div className={`${style.buttonContainer}`}>
-              <Link href="/Files/RCK Whitepaper.pdf">
+              <Link href="https://hub.rpsaxess.io/">
                 <div className={`${style.buttonBox} ${style.buttonBox1}`}>
-                  <h4 className={style.h4animate}>Buy Axess Card </h4>
+                  <h4 className={style.h4animate}>Dashboard</h4>
                 </div>
               </Link>
 
-              <Link href="/Files/RCK Whitepaper.pdf">
+              <Link href="https://hub.rpsaxess.io/player">
                 <div className={`${style.buttonBox} ${style.buttonBox1}`}>
                   <h4 className={style.h4animate}>Play Now</h4>
+                </div>
+              </Link>
+            </div>
+            <div className={`${style.buttonContainer}`}>
+              <Link href="https://hub.rpsaxess.io/">
+                <div className={`${style.buttonBox} ${style.buttonBox1}`}>
+                  <h4 className={style.h4animate}>Buy Axess Card </h4>
                 </div>
               </Link>
             </div>
