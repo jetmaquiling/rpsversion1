@@ -2,13 +2,13 @@
 import React from "react";
 import Head from "next/head";
 import * as style from "./home.module.css";
-import FootV1 from "@/components/footer/footv1";
+// import FootV1 from "@/components/footer/footv1";
 import Link from "next/link";
-import HeadV2 from "@/components/header/headv2";
-import Events from "./../components/caveats/events";
-import Countdown from "@/components/caveats/countdown";
-import Team from "@/components/caveats/Team";
-import LazyLoad from "react-lazyload";
+// import HeadV2 from "@/components/header/headv2";
+// import Events from "./../components/caveats/events";
+// import Countdown from "@/components/caveats/countdown";
+// import Team from "@/components/caveats/Team";
+// import LazyLoad from "react-lazyload";
 
 import {
   MdArrowForward,
@@ -19,10 +19,10 @@ import {
   MdKeyboardArrowUp,
 } from "react-icons/md";
 import ScrollButton from "@/components/buttons/scroll";
-import GameMechanics from "@/components/caveats/gamemechanics";
-import NFT from "@/components/caveats/nft";
-import Recruit from "@/components/caveats/recruit";
-import Video from "@/components/caveats/videosection";
+// import GameMechanics from "@/components/caveats/gamemechanics";
+// import NFT from "@/components/caveats/nft";
+// import Recruit from "@/components/caveats/recruit";
+// import Video from "@/components/caveats/videosection";
 
 export default function Home() {
   return (
