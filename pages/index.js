@@ -7,6 +7,7 @@ import Link from "next/link";
 import HeadV2 from "@/components/header/headv2";
 import Events from "./../components/caveats/events";
 import Countdown from "@/components/caveats/countdown";
+import Team from "@/components/caveats/Team";
 import LazyLoad from "react-lazyload";
 
 import {
@@ -50,6 +51,86 @@ export default function Home() {
       <ScrollButton />
 
       <div className={`${style.section} ${style.section1}`}>
+        {/* <HeadV2 /> */}
+
+        <div className={`${style.mainBody} ${style.mainBody1}`}>
+          <div className={`${style.bodyImage} ${style.bodyImage1}`}>
+            <img
+              src="/Images/homepage/banner-1.png"
+              alt="Token"
+              className={`${style.image} ${style.imagebanner}`}
+            />
+          </div>
+
+          <div className={`${style.bodyContent} ${style.bodyContent1}`}>
+            <img
+              src="/Images/homepage/game.png"
+              alt="Token"
+              className={`${style.image} ${style.image1}`}
+            />
+            <h1 className={style.titleBody}>Sorry, Page Under Construction</h1>
+            <p className={style.textBody}>
+              Play the simplest Play to Earn Game.
+              <br /> Powered by Blockchain Technology.
+              <br /> Get Your Axess Card Now!
+            </p>
+
+            <div className={`${style.buttonContainer}`}>
+              <Link href="https://hub.rpsaxess.io/">
+                <div className={`${style.buttonBox} ${style.buttonBox1}`}>
+                  <h4 className={style.h4animate}>Dashboard</h4>
+                </div>
+              </Link>
+
+              <Link href="https://hub.rpsaxess.io/player">
+                <div className={`${style.buttonBox} ${style.buttonBox1}`}>
+                  <h4 className={style.h4animate}>Play Now</h4>
+                </div>
+              </Link>
+            </div>
+            <div className={`${style.buttonContainer}`}>
+              <Link href="https://hub.rpsaxess.io/">
+                <div className={`${style.buttonBox} ${style.buttonBox1}`}>
+                  <h4 className={style.h4animate}>Buy Axess Card </h4>
+                </div>
+              </Link>
+            </div>
+
+            <img
+              src="/Images/homepage/versus.png"
+              alt="Token"
+              className={`${style.image} ${style.imagemiddlebanner}`}
+            />
+            <div className={style.mobileImage}>
+              <img
+                src="/Images/homepage/banner-1.png"
+                alt="Token"
+                className={`${style.image} ${style.mobileImageItem}`}
+              />
+              <img
+                src="/Images/homepage/versus.png"
+                alt="Token"
+                className={`${style.image} ${style.mobileImageItem}`}
+              />
+              <img
+                src="/Images/homepage/banner-2.png"
+                alt="Token"
+                className={`${style.image} ${style.mobileImageItem}`}
+              />
+            </div>
+          </div>
+
+          <div className={`${style.bodyImage} ${style.bodyImage1}`}>
+            <img
+              src="/Images/homepage/banner-2.png"
+              alt="Token"
+              className={`${style.image} ${style.imagebanner}`}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* <div className={`${style.section} ${style.section1}`}>
         <HeadV2 />
 
         <div className={`${style.mainBody} ${style.mainBody1}`}>
@@ -127,11 +208,11 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <Video />
+      {/* <Video /> */}
 
-      <div className={`${style.section} ${style.section2}`}>
+      {/* <div className={`${style.section} ${style.section2}`}>
         <LazyLoad height={100}>
           <div className={`${style.mainBody} ${style.mainBody2}`}>
             <div className={`${style.bodyContent} ${style.bodyContent2}`}>
@@ -155,27 +236,30 @@ export default function Home() {
               </p>
 
               <div className={`${style.buttonContainer}`}>
-                <Link href="/v1">
+                <Link href="https://hub.rpsaxess.io/player">
                   <div className={`${style.buttonBox} ${style.buttonBox2}`}>
                     <h4 className={style.h4animate}>Play Now</h4>
                   </div>
                 </Link>
-                <div className={`${style.buttonBox} ${style.buttonBox2}`}>
-                  <h4 className={style.h4animate}>Watch Teaser</h4>
-                </div>
+                <Link href="https://hub.rpsaxess.io/">
+                  <div className={`${style.buttonBox} ${style.buttonBox2}`}>
+                    <h4 className={style.h4animate}>Learn More</h4>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
         </LazyLoad>
-      </div>
-      <NFT />
+      </div> */}
+      {/* <NFT />
       <GameMechanics />
-      <Recruit />
+      <Recruit /> */}
+      {/* <Team /> */}
       {/* <LazyLoad height={100}>
         <Countdown/>
       </LazyLoad> */}
 
-      <FootV1 />
+      {/* <FootV1 /> */}
     </div>
   );
 }

@@ -30,9 +30,11 @@ const NFT = () => {
               Use your claimed points for the chance of replicating your NFT
               Axess Card; and visually obtain new NFT Axess Card.
             </p>
-            <div className={style.buttonContainer}>
-              <h4 className={style.buttonText}>BUY AXESS CARD </h4>
-            </div>
+            <Link href="https://hub.rpsaxess.io">
+              <div className={style.buttonContainer}>
+                <h4 className={style.buttonText}>BUY AXESS CARD </h4>
+              </div>
+            </Link>
           </LazyLoad>
         </div>
 
